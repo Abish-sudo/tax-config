@@ -1,0 +1,373 @@
+{
+  "financial_year": "2025-2026",
+
+  "tax_section": [
+    {
+      "code": "80C",
+      "title": "Investment / Payment Deduction",
+      "description": "Eligible investments such as PPF, ELSS, LIC, etc.",
+      "deductionType": "LIMIT",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80CCC",
+      "title": "Pension Contributions",
+      "description": "Contribution toward annuity/pension plans.",
+      "deductionType": "LIMIT",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80CCD(1)",
+      "title": "NPS Employee Contribution",
+      "description": "NPS employee/self employed contribution.",
+      "deductionType": "PERCENT",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80CCD(1B)",
+      "title": "Additional NPS",
+      "description": "Additional NPS Tier-I contribution.",
+      "deductionType": "LIMIT",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80CCD(2)",
+      "title": "Employer NPS Contribution",
+      "description": "Employer NPS contribution.",
+      "deductionType": "PERCENT",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": true
+    },
+    {
+      "code": "80D",
+      "title": "Medical Insurance",
+      "description": "Insurance premium + preventive healthcare.",
+      "deductionType": "MULTI_LIMIT",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80DD",
+      "title": "Dependent with Disability",
+      "description": "Fixed deduction for disabled dependent.",
+      "deductionType": "FIXED_RANGE",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80DDB",
+      "title": "Specified Diseases",
+      "description": "Treatment of specified diseases.",
+      "deductionType": "LIMIT_BY_AGE",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80E",
+      "title": "Education Loan Interest",
+      "description": "Interest on education loan.",
+      "deductionType": "UNLIMIT_DURATION",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80EE",
+      "title": "Home Loan Interest First Time Buyer",
+      "description": "Loan sanctioned FY 2016-17.",
+      "deductionType": "LIMIT_WINDOW",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80EEA",
+      "title": "Affordable Housing Interest",
+      "description": "Loan sanctioned FY 2019–2022.",
+      "deductionType": "LIMIT_WINDOW",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80EEB",
+      "title": "EV Loan Interest",
+      "description": "Electric vehicle loan interest.",
+      "deductionType": "LIMIT_WINDOW",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80G",
+      "title": "Donations",
+      "description": "Donations to charitable institutions.",
+      "deductionType": "DONATION_CATEGORY",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80GG",
+      "title": "Rent Paid (No HRA)",
+      "description": "Rent paid if no HRA available.",
+      "deductionType": "FORMULA_LOWEST",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80GGA",
+      "title": "Scientific/Rural Donations",
+      "description": "Donation toward scientific/rural development.",
+      "deductionType": "LIMIT_TO_INCOME",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80GGC",
+      "title": "Political Donations",
+      "description": "Donation to political party.",
+      "deductionType": "LIMIT_TO_INCOME",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80TTA",
+      "title": "Savings Interest",
+      "description": "Savings interest deduction (non-senior).",
+      "deductionType": "LIMIT",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80TTB",
+      "title": "Senior Citizen Interest",
+      "description": "Interest deduction for senior citizens.",
+      "deductionType": "LIMIT",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
+      "code": "80U",
+      "title": "Self Disability",
+      "description": "Self disability deduction.",
+      "deductionType": "FIXED_RANGE",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    }
+  ],
+
+  "tax_section_group": [
+    {
+      "groupCode": "80CCE",
+      "title": "Combined limit 80C + 80CCC + 80CCD(1)",
+      "maxAmount": 150000
+    }
+  ],
+
+  "tax_section_group_map": [
+    { "groupCode": "80CCE", "sectionCode": "80C" },
+    { "groupCode": "80CCE", "sectionCode": "80CCC" },
+    { "groupCode": "80CCE", "sectionCode": "80CCD(1)" }
+  ],
+
+  "tax_section_rule": [
+    {
+      "sectionCode": "80C",
+      "ruleType": "LIMIT",
+      "maxAmount": 150000,
+      "notes": "Max allowed under 80C"
+    },
+    {
+      "sectionCode": "80C",
+      "ruleType": "PERCENT",
+      "percentLimit": 10,
+      "notes": "LIC max 10% of sum assured"
+    },
+    {
+      "sectionCode": "80CCC",
+      "ruleType": "GROUP_LIMIT",
+      "notes": "Included under 80CCE"
+    },
+    {
+      "sectionCode": "80CCD(1)",
+      "ruleType": "PERCENT",
+      "percentLimit": 10,
+      "percentLimitOf": "BASIC_DA",
+      "notes": "NPS employee contribution"
+    },
+    {
+      "sectionCode": "80CCD(1B)",
+      "ruleType": "LIMIT",
+      "maxAmount": 50000,
+      "tenure": "TILL RETIREMENT",
+      "notes": "Additional deduction beyond 80CCE"
+    },
+    {
+      "sectionCode": "80CCD(2)",
+      "ruleType": "PERCENT",
+      "percentLimit": 10,
+      "percentLimitOf": "BASIC_DA",
+      "employeeType": "PRIVATE",
+      "notes": "Private employee cap"
+    },
+    {
+      "sectionCode": "80CCD(2)",
+      "ruleType": "PERCENT",
+      "percentLimit": 14,
+      "percentLimitOf": "SALARY",
+      "employeeType": "GOVERNMENT",
+      "notes": "Gov employee cap"
+    },
+    {
+      "sectionCode": "80D",
+      "ruleType": "AGE_LIMIT",
+      "maxAmount": 25000,
+      "ageLimit": "<60",
+      "employeeType": "SELF+FAMILY",
+      "notes": "Self + Family non-senior"
+    },
+    {
+      "sectionCode": "80D",
+      "ruleType": "AGE_LIMIT",
+      "maxAmount": 50000,
+      "ageLimit": ">=60",
+      "employeeType": "SELF+FAMILY",
+      "notes": "Self + Family senior"
+    },
+    {
+      "sectionCode": "80D",
+      "ruleType": "PARENT_AGE_LIMIT",
+      "maxAmount": 25000,
+      "ageLimit": "<60",
+      "employeeType": "PARENTS",
+      "notes": "Parents non-senior"
+    },
+    {
+      "sectionCode": "80D",
+      "ruleType": "PARENT_AGE_LIMIT",
+      "maxAmount": 50000,
+      "ageLimit": ">=60",
+      "employeeType": "PARENTS",
+      "notes": "Parents senior"
+    },
+    {
+      "sectionCode": "80DD",
+      "ruleType": "DISABILITY",
+      "minValue": 40,
+      "fixedDeduction": 75000,
+      "notes": ">=40% disability"
+    },
+    {
+      "sectionCode": "80DD",
+      "ruleType": "DISABILITY",
+      "minValue": 80,
+      "fixedDeduction": 125000,
+      "notes": ">=80% disability"
+    },
+    {
+      "sectionCode": "80DDB",
+      "ruleType": "AGE_LIMIT",
+      "maxAmount": 40000,
+      "ageLimit": "<60",
+      "employeeType": "ANY",
+      "notes": "Non-senior"
+    },
+    {
+      "sectionCode": "80DDB",
+      "ruleType": "AGE_LIMIT",
+      "maxAmount": 100000,
+      "ageLimit": ">=60",
+      "employeeType": "ANY",
+      "notes": "Senior"
+    },
+    {
+      "sectionCode": "80E",
+      "ruleType": "UNLIMIT_DURATION",
+      "tenure": "8 YEARS",
+      "notes": "Allowed maximum 8 years"
+    },
+    {
+      "sectionCode": "80EE",
+      "ruleType": "LIMIT",
+      "maxAmount": 50000,
+      "notes": "First-time home buyer (FY 2016-17)",
+      "windowCondition": "2016-2017",
+      "tenure": "15 YEARS"
+    },
+    {
+      "sectionCode": "80EEA",
+      "ruleType": "LIMIT",
+      "maxAmount": 150000,
+      "notes": "Affordable Housing",
+      "windowCondition": "2019-2022"
+    },
+    {
+      "sectionCode": "80EEB",
+      "ruleType": "LIMIT",
+      "maxAmount": 150000,
+      "notes": "EV loan interest",
+      "windowCondition": "2019-2023"
+    },
+    {
+      "sectionCode": "80G",
+      "ruleType": "DONATION",
+      "notes": "100% without limit"
+    },
+    {
+      "sectionCode": "80G",
+      "ruleType": "DONATION",
+      "notes": "50% without limit"
+    },
+    {
+      "sectionCode": "80G",
+      "ruleType": "DONATION_CAP",
+      "notes": "100% with 10% ATI cap"
+    },
+    {
+      "sectionCode": "80G",
+      "ruleType": "DONATION_CAP",
+      "notes": "50% with 10% ATI cap"
+    },
+    {
+      "sectionCode": "80GG",
+      "ruleType": "FORMULA",
+      "notes": "Least of (₹5,000/m, 25% ATI, Rent - 10% ATI)"
+    },
+    {
+      "sectionCode": "80GGA",
+      "ruleType": "LIMIT_TO_INCOME",
+      "notes": "100% subject to total income; no business income"
+    },
+    {
+      "sectionCode": "80GGC",
+      "ruleType": "LIMIT_TO_INCOME",
+      "notes": "100% only non-cash donation"
+    },
+    {
+      "sectionCode": "80TTA",
+      "ruleType": "LIMIT",
+      "maxAmount": 10000,
+      "notes": "Savings interest"
+    },
+    {
+      "sectionCode": "80TTB",
+      "ruleType": "LIMIT",
+      "maxAmount": 50000,
+      "notes": "Senior citizen interest"
+    },
+    {
+      "sectionCode": "80U",
+      "ruleType": "DISABILITY",
+      "minValue": 40,
+      "fixedDeduction": 75000,
+      "notes": ">=40% disability"
+    },
+    {
+      "sectionCode": "80U",
+      "ruleType": "DISABILITY",
+      "minValue": 80,
+      "fixedDeduction": 125000,
+      "notes": ">=80% disability"
+    }
+  ]
+}
