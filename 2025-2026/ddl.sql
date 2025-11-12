@@ -35,7 +35,8 @@ CREATE TABLE IF NOT EXISTS tax_section_rule (
     employee_type VARCHAR(50),
     tenure VARCHAR(50),
     is_active BOOLEAN DEFAULT TRUE,
-    financial_year VARCHAR(20)
+    financial_year VARCHAR(20),
+    CONSTRAINT uq_tax_section_rule UNIQUE (section_id, rule_type, age_limit, employee_type, financial_year)
 );
 
 ------------------------------------------------------------
@@ -65,3 +66,4 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 
 ALTER TABLE tax_section
 ADD COLUMN IF NOT EXISTS remarks TEXT;
+
