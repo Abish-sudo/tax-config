@@ -44,6 +44,8 @@ ON tax_section_rule (
     rule_type,
     COALESCE(age_limit, ''),
     COALESCE(employee_type, ''),
+    COALESCE(window_condition, ''),
+    COALESCE(tenure, ''),
     financial_year
 );
 
@@ -74,5 +76,6 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 
 ALTER TABLE tax_section
 ADD COLUMN IF NOT EXISTS remarks TEXT;
+
 
 
