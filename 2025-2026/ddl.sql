@@ -63,3 +63,5 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
     CONSTRAINT unique_group_section_fy UNIQUE (group_id, section_id, financial_year)
 );
 
+ALTER TABLE tax_section
+ADD COLUMN IF NOT EXISTS remarks TEXT;
