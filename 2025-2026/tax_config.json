@@ -8,8 +8,9 @@
       "description": "Eligible investments such as PPF, ELSS, LIC, etc.",
       "deductionType": "LIMIT",
       "oldRegimeAllowed": true,
-      "newRegimeAllowed": false
-    },
+      "newRegimeAllowed": false,
+      "remarks": "Updated via UPSERT test"
+   },
     {
       "code": "80CCC",
       "title": "Pension Contributions",
@@ -371,3 +372,4 @@
     }
   ]
 }
+
