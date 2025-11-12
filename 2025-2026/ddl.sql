@@ -40,6 +40,8 @@ CREATE TABLE IF NOT EXISTS tax_section_rule (
 
 ALTER TABLE tax_section_rule DROP CONSTRAINT IF EXISTS uq_tax_section_rule;
 
+DROP INDEX IF EXISTS uq_tax_section_rule_idx;
+
 CREATE UNIQUE INDEX IF NOT EXISTS uq_tax_section_rule_idx
 ON tax_section_rule (
     section_id,
@@ -78,6 +80,7 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 
 ALTER TABLE tax_section
 ADD COLUMN IF NOT EXISTS remarks TEXT;
+
 
 
 
