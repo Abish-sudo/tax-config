@@ -38,16 +38,11 @@ CREATE TABLE IF NOT EXISTS tax_section_rule (
     financial_year VARCHAR(20)
 );
 
-CREATE UNIQUE INDEX IF NOT EXISTS uq_tax_section_rule_idx
-ON tax_section_rule (
-    section_id,
-    rule_type,
-    age_limit,
-    employee_type,
-    window_condition,
-    tenure,
-    financial_year
-);
+ALTER TABLE tax_section_rule
+ADD COLUMN IF NOT EXISTS rule_hash VARCHAR(64);
+
+CREATE UNIQUE INDEX IF NOT EXISTS uq_tax_section_rule_hash_idx
+ON tax_section_rule (rule_hash);
 
 ------------------------------------------------------------
 -- TAX SECTION GROUP
@@ -76,6 +71,7 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 
 ALTER TABLE tax_section
 ADD COLUMN IF NOT EXISTS remarks TEXT;
+
 
 
 
