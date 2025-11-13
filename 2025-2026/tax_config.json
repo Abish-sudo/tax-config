@@ -369,7 +369,15 @@
       "minValue": 80,
       "fixedDeduction": 125000,
       "notes": ">=80% disability"
+    },
+    {
+      "sectionCode": "80U",
+      "ruleType": "DISABILITY",
+      "minValue": 80,
+      "fixedDeduction": 125000,
+      "notes": ">=80% disability"
     }
   ]
 }
+
 
