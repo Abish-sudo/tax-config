@@ -44,6 +44,14 @@
       "newRegimeAllowed": true
     },
     {
+      "code": "80G",
+      "title": "Donations",
+      "description": "Donations to charitable institutions.",
+      "deductionType": "DONATION_CATEGORY",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
       "code": "80D",
       "title": "Medical Insurance",
       "description": "Insurance premium + preventive healthcare.",
@@ -364,6 +372,7 @@
     }
   ]
 }
+
 
 
 
