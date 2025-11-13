@@ -52,14 +52,6 @@
       "newRegimeAllowed": false
     },
     {
-      "code": "80G",
-      "title": "Donations",
-      "description": "Donations to charitable institutions.",
-      "deductionType": "DONATION_CATEGORY",
-      "oldRegimeAllowed": true,
-      "newRegimeAllowed": false
-    },
-    {
       "code": "80DD",
       "title": "Dependent with Disability",
       "description": "Fixed deduction for disabled dependent.",
@@ -372,6 +364,7 @@
     }
   ]
 }
+
 
 
 
