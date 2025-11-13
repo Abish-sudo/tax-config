@@ -312,21 +312,25 @@
     {
       "sectionCode": "80G",
       "ruleType": "DONATION",
+      "donationCategory": "100_NO_LIMIT",
       "notes": "100% without limit"
     },
     {
       "sectionCode": "80G",
       "ruleType": "DONATION",
+      "donationCategory": "50_NO_LIMIT",
       "notes": "50% without limit"
     },
     {
       "sectionCode": "80G",
       "ruleType": "DONATION_CAP",
+      "donationCategory": "100_WITH_10_PERCENT_ATI",
       "notes": "100% with 10% ATI cap"
     },
     {
       "sectionCode": "80G",
       "ruleType": "DONATION_CAP",
+      "donationCategory": "50_WITH_10_PERCENT_ATI",
       "notes": "50% with 10% ATI cap"
     },
     {
@@ -372,6 +376,7 @@
     }
   ]
 }
+
 
 
 
