@@ -167,7 +167,6 @@
 
   "tax_section_group_map": [
     { "groupCode": "80CCE", "sectionCode": "80C" },
-    { "groupCode": "80CCE", "sectionCode": "80CCC" },
     { "groupCode": "80CCE", "sectionCode": "80CCD(1)" }
   ],
 
@@ -372,6 +371,7 @@
     }
   ]
 }
+
 
 
 
