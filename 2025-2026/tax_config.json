@@ -100,6 +100,14 @@
       "newRegimeAllowed": false
     },
     {
+      "code": "80G",
+      "title": "Donations",
+      "description": "Donations to charitable institutions.",
+      "deductionType": "DONATION_CATEGORY",
+      "oldRegimeAllowed": true,
+      "newRegimeAllowed": false
+    },
+    {
       "code": "80GG",
       "title": "Rent Paid (No HRA)",
       "description": "Rent paid if no HRA available.",
@@ -364,6 +372,7 @@
     }
   ]
 }
+
 
 
 
