@@ -372,12 +372,13 @@
     },
     {
       "sectionCode": "80U",
-      "ruleType": "DISABILITY",
+      "ruleType": "DSABILITY",
       "minValue": 80,
       "fixedDeduction": 125000,
       "notes": ">=80% disability"
     }
   ]
 }
+
 
 
