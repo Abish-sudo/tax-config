@@ -180,9 +180,10 @@
     },
     {
       "sectionCode": "80C",
+      "subCategory": "LIC",
       "ruleType": "PERCENT",
       "percentLimit": 10,
-      "notes": "LIC max 10% of sum assured"
+      "percentLimitOf": "SUM_ASSURED"
     },
     {
       "sectionCode": "80CCC",
@@ -376,6 +377,7 @@
     }
   ]
 }
+
 
 
 
