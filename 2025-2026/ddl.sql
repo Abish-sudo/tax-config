@@ -36,7 +36,8 @@ CREATE TABLE IF NOT EXISTS tax_section_rule (
     tenure VARCHAR(50),
     is_active BOOLEAN DEFAULT TRUE,
     financial_year VARCHAR(20),
-    donation_category VARCHAR(75)
+    donation_category VARCHAR(75),
+    sub_category VARCHAR(100)
 );
 
 ALTER TABLE tax_section_rule
@@ -72,6 +73,7 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 
 ALTER TABLE tax_section
 ADD COLUMN IF NOT EXISTS remarks TEXT;
+
 
 
 
