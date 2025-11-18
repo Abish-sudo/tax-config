@@ -8,7 +8,8 @@
       "description": "Eligible investments such as PPF, ELSS, LIC, etc.",
       "deductionType": "LIMIT",
       "oldRegimeAllowed": true,
-      "newRegimeAllowed": false
+      "newRegimeAllowed": false,
+      "isGroupLimit": true
    },
     {
       "code": "80CCC",
@@ -16,7 +17,8 @@
       "description": "Contribution toward annuity/pension plans.",
       "deductionType": "LIMIT",
       "oldRegimeAllowed": true,
-      "newRegimeAllowed": false
+      "newRegimeAllowed": false,
+      "isGroupLimit": true
     },
     {
       "code": "80CCD(1)",
@@ -24,7 +26,8 @@
       "description": "NPS employee/self employed contribution.",
       "deductionType": "PERCENT",
       "oldRegimeAllowed": true,
-      "newRegimeAllowed": false
+      "newRegimeAllowed": false,
+      "isGroupLimit": true
     },
     {
       "code": "80CCD(1B)",
@@ -376,6 +379,7 @@
     }
   ]
 }
+
 
 
 
