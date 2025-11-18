@@ -72,10 +72,8 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 );
 
 ALTER TABLE tax_section
-DROP COLUMN IF EXISTS remarks;
-
-ALTER TABLE tax_section
 ADD COLUMN IF NOT EXISTS is_group_limit BOOLEAN DEFAULT FALSE;
+
 
 
 
