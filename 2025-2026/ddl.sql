@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS tax_section (
     is_active BOOLEAN DEFAULT TRUE,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    is_group_limit BOOLEAN DEFAULT FALSE,
     CONSTRAINT uq_tax_section UNIQUE (code, financial_year)
 );
 
@@ -37,14 +38,10 @@ CREATE TABLE IF NOT EXISTS tax_section_rule (
     is_active BOOLEAN DEFAULT TRUE,
     financial_year VARCHAR(20),
     donation_category VARCHAR(75),
-    sub_category VARCHAR(100)
+    sub_category VARCHAR(100),
+    unique_key VARCHAR(100),
+    CONSTRAINT uq_section_unique_key UNIQUE (section_id, unique_key);
 );
-
-ALTER TABLE tax_section_rule
-ADD COLUMN IF NOT EXISTS rule_hash VARCHAR(64);
-
-CREATE UNIQUE INDEX IF NOT EXISTS uq_tax_section_rule_hash_idx
-ON tax_section_rule (rule_hash);
 
 ------------------------------------------------------------
 -- TAX SECTION GROUP
@@ -72,17 +69,12 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 );
 
 ALTER TABLE tax_section
-ADD COLUMN IF NOT EXISTS is_group_limit BOOLEAN DEFAULT FALSE;
-
-ALTER TABLE tax_section
 ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
 
 ALTER TABLE tax_section_rule
 ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
-
-ALTER TABLE tax_section_rule
-ADD COLUMN IF NOT EXISTS unique_key VARCHAR(100);
 
 ALTER TABLE tax_section_group
 ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
+
 
