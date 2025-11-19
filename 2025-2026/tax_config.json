@@ -9,7 +9,8 @@
       "deductionType": "LIMIT",
       "oldRegimeAllowed": true,
       "newRegimeAllowed": false,
-      "isGroupLimit": true
+      "isGroupLimit": true,
+      "remarks": "it includes all loan schemas"
    },
     {
       "code": "80CCC",
@@ -379,6 +380,7 @@
     }
   ]
 }
+
 
 
 
