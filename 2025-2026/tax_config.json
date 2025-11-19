@@ -169,7 +169,8 @@
   ],
 
   "tax_section_group_map": [
-    { "groupCode": "80CCE", "sectionCode": "80C" },
+    { "groupCode": "80CCE", "sectionCode": "80C" ,
+      "remarks": "it includes all loan schemas"},
     { "groupCode": "80CCE", "sectionCode": "80CCC" },
     { "groupCode": "80CCE", "sectionCode": "80CCD(1)" }
   ],
@@ -179,14 +180,16 @@
       "sectionCode": "80C",
       "ruleType": "LIMIT",
       "maxAmount": 150000,
-      "notes": "Max allowed under 80C"
+      "notes": "Max allowed under 80C",
+      "remarks": "it includes all loan schemas"
     },
     {
       "sectionCode": "80C",
       "subCategory": "LIC",
       "ruleType": "PERCENT",
       "percentLimit": 10,
-      "percentLimitOf": "SUM_ASSURED"
+      "percentLimitOf": "SUM_ASSURED",
+      "remarks": "it includes all loan schemas"
     },
     {
       "sectionCode": "80CCC",
@@ -380,6 +383,7 @@
     }
   ]
 }
+
 
 
 
