@@ -164,13 +164,13 @@
     {
       "groupCode": "80CCE",
       "title": "Combined limit 80C + 80CCC + 80CCD(1)",
-      "maxAmount": 150000
+      "maxAmount": 150000 ,
+      "remarks": "it includes only 80C , 80CCC , 80CCD(1) sections"
     }
   ],
 
   "tax_section_group_map": [
-    { "groupCode": "80CCE", "sectionCode": "80C" ,
-      "remarks": "it includes all loan schemas"},
+    { "groupCode": "80CCE", "sectionCode": "80C"},
     { "groupCode": "80CCE", "sectionCode": "80CCC" },
     { "groupCode": "80CCE", "sectionCode": "80CCD(1)" }
   ],
@@ -383,6 +383,7 @@
     }
   ]
 }
+
 
 
 
