@@ -77,15 +77,8 @@ ADD COLUMN IF NOT EXISTS is_group_limit BOOLEAN DEFAULT FALSE;
 ALTER TABLE tax_section
 ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
 
+ALTER TABLE tax_section_rule
+ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
 
-
-
-
-
-
-
-
-
-
-
-
+ALTER TABLE tax_section_group
+ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
