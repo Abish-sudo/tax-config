@@ -177,26 +177,28 @@
 
   "tax_section_rule": [
     {
+      "uniqueKey": "80C_LIMIT_1",
       "sectionCode": "80C",
       "ruleType": "LIMIT",
       "maxAmount": 150000,
-      "notes": "Max allowed under 80C",
-      "remarks": "it includes all loan schemas"
+      "notes": "Max allowed under 80C"
     },
     {
+      "uniqueKey": "80C_PERCENT_LIC",
       "sectionCode": "80C",
       "subCategory": "LIC",
       "ruleType": "PERCENT",
       "percentLimit": 10,
-      "percentLimitOf": "SUM_ASSURED",
-      "remarks": "it includes all loan schemas"
+      "percentLimitOf": "SUM_ASSURED"
     },
     {
+      "uniqueKey": "80CCC_GROUP_LIMIT",
       "sectionCode": "80CCC",
       "ruleType": "GROUP_LIMIT",
       "notes": "Included under 80CCE"
     },
     {
+      "uniqueKey": "80CCD1_PERCENT_BASIC_DA",
       "sectionCode": "80CCD(1)",
       "ruleType": "PERCENT",
       "percentLimit": 10,
@@ -204,6 +206,7 @@
       "notes": "NPS employee contribution"
     },
     {
+      "uniqueKey": "80CCD1B_LIMIT",
       "sectionCode": "80CCD(1B)",
       "ruleType": "LIMIT",
       "maxAmount": 50000,
@@ -211,6 +214,7 @@
       "notes": "Additional deduction beyond 80CCE"
     },
     {
+      "uniqueKey": "80CCD2_PRIVATE",
       "sectionCode": "80CCD(2)",
       "ruleType": "PERCENT",
       "percentLimit": 10,
@@ -219,6 +223,7 @@
       "notes": "Private employee cap"
     },
     {
+      "uniqueKey": "80CCD2_GOVT",
       "sectionCode": "80CCD(2)",
       "ruleType": "PERCENT",
       "percentLimit": 14,
@@ -227,6 +232,7 @@
       "notes": "Gov employee cap"
     },
     {
+      "uniqueKey": "80D_SELF_FAMILY_BELOW60",
       "sectionCode": "80D",
       "ruleType": "AGE_LIMIT",
       "maxAmount": 25000,
@@ -235,6 +241,7 @@
       "notes": "Self + Family non-senior"
     },
     {
+      "uniqueKey": "80D_SELF_FAMILY_ABOVE60",
       "sectionCode": "80D",
       "ruleType": "AGE_LIMIT",
       "maxAmount": 50000,
@@ -243,6 +250,7 @@
       "notes": "Self + Family senior"
     },
     {
+      "uniqueKey": "80D_PARENTS_BELOW60",
       "sectionCode": "80D",
       "ruleType": "PARENT_AGE_LIMIT",
       "maxAmount": 25000,
@@ -251,6 +259,7 @@
       "notes": "Parents non-senior"
     },
     {
+      "uniqueKey": "80D_PARENTS_ABOVE60",
       "sectionCode": "80D",
       "ruleType": "PARENT_AGE_LIMIT",
       "maxAmount": 50000,
@@ -259,6 +268,7 @@
       "notes": "Parents senior"
     },
     {
+      "uniqueKey": "80DD_40P",
       "sectionCode": "80DD",
       "ruleType": "DISABILITY",
       "minValue": 40,
@@ -266,6 +276,7 @@
       "notes": ">=40% disability"
     },
     {
+      "uniqueKey": "80DD_80P",
       "sectionCode": "80DD",
       "ruleType": "DISABILITY",
       "minValue": 80,
@@ -273,6 +284,7 @@
       "notes": ">=80% disability"
     },
     {
+      "uniqueKey": "80DDB_BELOW60",
       "sectionCode": "80DDB",
       "ruleType": "AGE_LIMIT",
       "maxAmount": 40000,
@@ -281,6 +293,7 @@
       "notes": "Non-senior"
     },
     {
+      "uniqueKey": "80DDB_ABOVE60",
       "sectionCode": "80DDB",
       "ruleType": "AGE_LIMIT",
       "maxAmount": 100000,
@@ -289,12 +302,14 @@
       "notes": "Senior"
     },
     {
+      "uniqueKey": "80E_8YEAR",
       "sectionCode": "80E",
       "ruleType": "UNLIMIT_DURATION",
       "tenure": "8 YEARS",
       "notes": "Allowed maximum 8 years"
     },
     {
+      "uniqueKey": "80EE_LIMIT",
       "sectionCode": "80EE",
       "ruleType": "LIMIT",
       "maxAmount": 50000,
@@ -303,6 +318,7 @@
       "tenure": "15 YEARS"
     },
     {
+      "uniqueKey": "80EEA_LIMIT",
       "sectionCode": "80EEA",
       "ruleType": "LIMIT",
       "maxAmount": 150000,
@@ -310,6 +326,7 @@
       "windowCondition": "2019-2022"
     },
     {
+      "uniqueKey": "80EEB_LIMIT",
       "sectionCode": "80EEB",
       "ruleType": "LIMIT",
       "maxAmount": 150000,
@@ -317,57 +334,67 @@
       "windowCondition": "2019-2023"
     },
     {
+      "uniqueKey": "80G_100_NO_LIMIT",
       "sectionCode": "80G",
       "ruleType": "DONATION",
       "donationCategory": "100_NO_LIMIT",
       "notes": "100% without limit"
     },
     {
+      "uniqueKey": "80G_50_NO_LIMIT",
       "sectionCode": "80G",
       "ruleType": "DONATION",
       "donationCategory": "50_NO_LIMIT",
       "notes": "50% without limit"
     },
     {
+      "uniqueKey": "80G_100_ATI",
       "sectionCode": "80G",
       "ruleType": "DONATION_CAP",
       "donationCategory": "100_WITH_10_PERCENT_ATI",
       "notes": "100% with 10% ATI cap"
     },
     {
+      "uniqueKey": "80G_50_ATI",
       "sectionCode": "80G",
       "ruleType": "DONATION_CAP",
       "donationCategory": "50_WITH_10_PERCENT_ATI",
       "notes": "50% with 10% ATI cap"
     },
     {
+      "uniqueKey": "80GG_FORMULA",
       "sectionCode": "80GG",
       "ruleType": "FORMULA",
       "notes": "Least of (₹5,000/m, 25% ATI, Rent - 10% ATI)"
     },
     {
+      "uniqueKey": "80GGA_LIMIT",
       "sectionCode": "80GGA",
       "ruleType": "LIMIT_TO_INCOME",
       "notes": "100% subject to total income; no business income"
     },
     {
+      "uniqueKey": "80GGC_LIMIT",
       "sectionCode": "80GGC",
       "ruleType": "LIMIT_TO_INCOME",
       "notes": "100% only non-cash donation"
     },
     {
+      "uniqueKey": "80TTA_LIMIT",
       "sectionCode": "80TTA",
       "ruleType": "LIMIT",
       "maxAmount": 10000,
       "notes": "Savings interest"
     },
     {
+      "uniqueKey": "80TTB_LIMIT",
       "sectionCode": "80TTB",
       "ruleType": "LIMIT",
       "maxAmount": 50000,
       "notes": "Senior citizen interest"
     },
     {
+      "uniqueKey": "80U_40P",
       "sectionCode": "80U",
       "ruleType": "DISABILITY",
       "minValue": 40,
@@ -375,6 +402,7 @@
       "notes": ">=40% disability"
     },
     {
+      "uniqueKey": "80U_80P",
       "sectionCode": "80U",
       "ruleType": "DISABILITY",
       "minValue": 80,
@@ -383,6 +411,7 @@
     }
   ]
 }
+
 
 
 
