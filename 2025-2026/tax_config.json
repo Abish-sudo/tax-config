@@ -185,6 +185,15 @@
       "remarks": "it includes all loan schemas"
     },
     {
+      "uniqueKey": "80C_PERCENT_LIC",
+      "sectionCode": "80C",
+      "subCategory": "LIC",
+      "ruleType": "PERCENT",
+      "percentLimit": 10,
+      "percentLimitOf": "SUM_ASSURED",
+      "remarks": "it includes all loan schemas"
+    },
+    {
       "uniqueKey": "80CCC_GROUP_LIMIT",
       "sectionCode": "80CCC",
       "ruleType": "GROUP_LIMIT",
@@ -404,6 +413,7 @@
     }
   ]
 }
+
 
 
 
