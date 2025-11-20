@@ -190,8 +190,7 @@
       "subCategory": "LIC",
       "ruleType": "PERCENT",
       "percentLimit": 10,
-      "percentLimitOf": "SUM_ASSURED",
-      "remarks": "it includes all loan schemas"
+      "percentLimitOf": "SUM_ASSURED"
     },
     {
       "uniqueKey": "80CCC_GROUP_LIMIT",
@@ -413,6 +412,7 @@
     }
   ]
 }
+
 
 
 
