@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS tax_section_rule (
     financial_year VARCHAR(20),
     donation_category VARCHAR(75),
     sub_category VARCHAR(100),
-    unique_key VARCHAR(100),
+    unique_key VARCHAR(100) NOT NULL,
     CONSTRAINT uq_section_unique_key UNIQUE (section_id, unique_key)
 );
 
@@ -76,6 +76,7 @@ ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
 
 ALTER TABLE tax_section_group
 ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
+
 
 
 
