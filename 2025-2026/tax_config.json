@@ -181,7 +181,8 @@
       "sectionCode": "80C",
       "ruleType": "LIMIT",
       "maxAmount": 150000,
-      "notes": "Max allowed under 80C"
+      "notes": "Max allowed under 80C",
+      "remarks": "it includes all loan schemas"
     },
     {
       "uniqueKey": "80C_PERCENT_LIC",
@@ -189,7 +190,8 @@
       "subCategory": "LIC",
       "ruleType": "PERCENT",
       "percentLimit": 10,
-      "percentLimitOf": "SUM_ASSURED"
+      "percentLimitOf": "SUM_ASSURED",
+      "remarks": "it includes all loan schemas"
     },
     {
       "uniqueKey": "80CCC_GROUP_LIMIT",
@@ -411,6 +413,7 @@
     }
   ]
 }
+
 
 
 
