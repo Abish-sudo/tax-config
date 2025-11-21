@@ -68,14 +68,12 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
     CONSTRAINT unique_group_section_fy UNIQUE (group_id, section_id, financial_year)
 );
 
-ALTER TABLE tax_section
-DROP COLUMN IF EXISTS remarks;
-
 ALTER TABLE tax_section_rule
-DROP COLUMN IF EXISTS remarks;
+ADD COLUMN IF NOT EXISTS label VARCHAR(250);
 
-ALTER TABLE tax_section_group
-DROP COLUMN IF EXISTS remarks;
+
+
+
 
 
 
