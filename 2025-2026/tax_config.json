@@ -9,8 +9,7 @@
       "deductionType": "LIMIT",
       "oldRegimeAllowed": true,
       "newRegimeAllowed": false,
-      "isGroupLimit": true,
-      "remarks": "it includes all loan schemas"
+      "isGroupLimit": true
    },
     {
       "code": "80CCC",
@@ -164,8 +163,7 @@
     {
       "groupCode": "80CCE",
       "title": "Combined limit 80C + 80CCC + 80CCD(1)",
-      "maxAmount": 150000 ,
-      "remarks": "it includes only 80C , 80CCC , 80CCD(1) sections"
+      "maxAmount": 150000
     }
   ],
 
@@ -181,8 +179,7 @@
       "sectionCode": "80C",
       "ruleType": "LIMIT",
       "maxAmount": 150000,
-      "notes": "Max allowed under 80C",
-      "remarks": "it includes all loan schemas"
+      "notes": "Max allowed under 80C"
     },
     {
       "uniqueKey": "80CCC_GROUP_LIMIT",
@@ -404,6 +401,7 @@
     }
   ]
 }
+
 
 
 
