@@ -179,13 +179,15 @@
       "sectionCode": "80C",
       "ruleType": "LIMIT",
       "maxAmount": 150000,
-      "notes": "Max allowed under 80C"
+      "notes": "Max allowed under 80C",
+      "label": "Maximum deduction allowed under Section 80C"
     },
     {
       "uniqueKey": "80CCC_GROUP_LIMIT",
       "sectionCode": "80CCC",
       "ruleType": "GROUP_LIMIT",
-      "notes": "Included under 80CCE"
+      "notes": "Included under 80CCE",
+      "label": "Part of combined limit under Section 80CCE"
     },
     {
       "uniqueKey": "80CCD1_PERCENT_BASIC_DA",
@@ -193,7 +195,8 @@
       "ruleType": "PERCENT",
       "percentLimit": 10,
       "percentLimitOf": "BASIC_DA",
-      "notes": "NPS employee contribution"
+      "notes": "NPS employee contribution",
+      "label": "10% of Basic + DA (Employee NPS contribution)"
     },
     {
       "uniqueKey": "80CCD1B_LIMIT",
@@ -201,7 +204,8 @@
       "ruleType": "LIMIT",
       "maxAmount": 50000,
       "tenure": "TILL RETIREMENT",
-      "notes": "Additional deduction beyond 80CCE"
+      "notes": "Additional deduction beyond 80CCE",
+      "label": "Additional NPS deduction up to ₹50,000"
     },
     {
       "uniqueKey": "80CCD2_PRIVATE",
@@ -210,7 +214,8 @@
       "percentLimit": 10,
       "percentLimitOf": "BASIC_DA",
       "employeeType": "PRIVATE",
-      "notes": "Private employee cap"
+      "notes": "Private employee cap",
+      "label": "10% of Basic + DA (Private employee; employer NPS contribution)"
     },
     {
       "uniqueKey": "80CCD2_GOVT",
@@ -219,7 +224,8 @@
       "percentLimit": 14,
       "percentLimitOf": "SALARY",
       "employeeType": "GOVERNMENT",
-      "notes": "Gov employee cap"
+      "notes": "Gov employee cap",
+      "label": "14% of Salary (Government employee; employer NPS contribution)"
     },
     {
       "uniqueKey": "80D_SELF_FAMILY_BELOW60",
@@ -228,7 +234,8 @@
       "maxAmount": 25000,
       "ageLimit": "<60",
       "employeeType": "SELF+FAMILY",
-      "notes": "Self + Family non-senior"
+      "notes": "Self + Family non-senior",
+      "label": "Self + Family (Below 60) – Deduction up to ₹25,000"
     },
     {
       "uniqueKey": "80D_SELF_FAMILY_ABOVE60",
@@ -237,7 +244,8 @@
       "maxAmount": 50000,
       "ageLimit": ">=60",
       "employeeType": "SELF+FAMILY",
-      "notes": "Self + Family senior"
+      "notes": "Self + Family senior",
+      "label": "Self + Family (Above 60) – Deduction up to ₹50,000"
     },
     {
       "uniqueKey": "80D_PARENTS_BELOW60",
@@ -246,7 +254,8 @@
       "maxAmount": 25000,
       "ageLimit": "<60",
       "employeeType": "PARENTS",
-      "notes": "Parents non-senior"
+      "notes": "Parents non-senior",
+      "label": "Parents (Below 60) – Deduction up to ₹25,000"
     },
     {
       "uniqueKey": "80D_PARENTS_ABOVE60",
@@ -255,7 +264,8 @@
       "maxAmount": 50000,
       "ageLimit": ">=60",
       "employeeType": "PARENTS",
-      "notes": "Parents senior"
+      "notes": "Parents senior",
+      "label": "Parents (Above 60) – Deduction up to ₹50,000"
     },
     {
       "uniqueKey": "80DD_40P",
@@ -263,7 +273,8 @@
       "ruleType": "DISABILITY",
       "minValue": 40,
       "fixedDeduction": 75000,
-      "notes": ">=40% disability"
+      "notes": ">=40% disability",
+      "label": "Dependent disability ≥40% – Flat deduction ₹75,000"
     },
     {
       "uniqueKey": "80DD_80P",
@@ -271,7 +282,8 @@
       "ruleType": "DISABILITY",
       "minValue": 80,
       "fixedDeduction": 125000,
-      "notes": ">=80% disability"
+      "notes": ">=80% disability",
+      "label": "Dependent disability ≥80% – Flat deduction ₹1,25,000"
     },
     {
       "uniqueKey": "80DDB_BELOW60",
@@ -280,7 +292,8 @@
       "maxAmount": 40000,
       "ageLimit": "<60",
       "employeeType": "ANY",
-      "notes": "Non-senior"
+      "notes": "Non-senior",
+      "label": "Treatment for disease (Below 60) – Deduction up to ₹40,000"
     },
     {
       "uniqueKey": "80DDB_ABOVE60",
@@ -289,14 +302,16 @@
       "maxAmount": 100000,
       "ageLimit": ">=60",
       "employeeType": "ANY",
-      "notes": "Senior"
+      "notes": "Senior",
+      "label": "Treatment for disease (Above 60) – Deduction up to ₹1,00,000"
     },
     {
       "uniqueKey": "80E_8YEAR",
       "sectionCode": "80E",
       "ruleType": "UNLIMIT_DURATION",
       "tenure": "8 YEARS",
-      "notes": "Allowed maximum 8 years"
+      "notes": "Allowed maximum 8 years",
+      "label": "Education loan interest – Up to 8 years"
     },
     {
       "uniqueKey": "80EE_LIMIT",
@@ -305,7 +320,8 @@
       "maxAmount": 50000,
       "notes": "First-time home buyer (FY 2016-17)",
       "windowCondition": "2016-2017",
-      "tenure": "15 YEARS"
+      "tenure": "15 YEARS",
+      "label": "Home loan interest (FY 2016–17) – Deduction up to ₹50,000"
     },
     {
       "uniqueKey": "80EEA_LIMIT",
@@ -313,7 +329,8 @@
       "ruleType": "LIMIT",
       "maxAmount": 150000,
       "notes": "Affordable Housing",
-      "windowCondition": "2019-2022"
+      "windowCondition": "2019-2022",
+      "label": "Affordable housing loan interest – Deduction up to ₹1,50,000"
     },
     {
       "uniqueKey": "80EEB_LIMIT",
@@ -321,67 +338,77 @@
       "ruleType": "LIMIT",
       "maxAmount": 150000,
       "notes": "EV loan interest",
-      "windowCondition": "2019-2023"
+      "windowCondition": "2019-2023",
+      "label": "EV loan interest – Deduction up to ₹1,50,000"
     },
     {
       "uniqueKey": "80G_100_NO_LIMIT",
       "sectionCode": "80G",
       "ruleType": "DONATION",
       "donationCategory": "100_NO_LIMIT",
-      "notes": "100% without limit"
+      "notes": "100% without limit",
+      "label": "100% deduction – No limit"
     },
     {
       "uniqueKey": "80G_50_NO_LIMIT",
       "sectionCode": "80G",
       "ruleType": "DONATION",
       "donationCategory": "50_NO_LIMIT",
-      "notes": "50% without limit"
+      "notes": "50% without limit",
+      "label": "50% deduction – No limit"
     },
     {
       "uniqueKey": "80G_100_ATI",
       "sectionCode": "80G",
       "ruleType": "DONATION_CAP",
       "donationCategory": "100_WITH_10_PERCENT_ATI",
-      "notes": "100% with 10% ATI cap"
+      "notes": "100% with 10% ATI cap",
+      "label": "100% deduction – Limited to 10% of Adjusted Total Income"
     },
     {
       "uniqueKey": "80G_50_ATI",
       "sectionCode": "80G",
       "ruleType": "DONATION_CAP",
       "donationCategory": "50_WITH_10_PERCENT_ATI",
-      "notes": "50% with 10% ATI cap"
+      "notes": "50% with 10% ATI cap",
+      "label": "50% deduction – Limited to 10% of Adjusted Total Income"
     },
     {
       "uniqueKey": "80GG_FORMULA",
       "sectionCode": "80GG",
       "ruleType": "FORMULA",
-      "notes": "Least of (₹5,000/m, 25% ATI, Rent - 10% ATI)"
+      "notes": "Least of (₹5,000/m, 25% ATI, Rent - 10% ATI)",
+      "label": "Rent deduction – Least of ₹5,000/m, 25% ATI or (Rent – 10% ATI)"
     },
     {
       "uniqueKey": "80GGA_LIMIT",
       "sectionCode": "80GGA",
       "ruleType": "LIMIT_TO_INCOME",
-      "notes": "100% subject to total income; no business income"
+      "notes": "100% subject to total income; no business income",
+      "label": "100% deduction (only if no business income)"
     },
     {
       "uniqueKey": "80GGC_LIMIT",
       "sectionCode": "80GGC",
       "ruleType": "LIMIT_TO_INCOME",
-      "notes": "100% only non-cash donation"
+      "notes": "100% only non-cash donation",
+      "label": "100% deduction (non-cash donations only)"
     },
     {
       "uniqueKey": "80TTA_LIMIT",
       "sectionCode": "80TTA",
       "ruleType": "LIMIT",
       "maxAmount": 10000,
-      "notes": "Savings interest"
+      "notes": "Savings interest",
+      "label": "Savings account interest – Up to ₹10,000"
     },
     {
       "uniqueKey": "80TTB_LIMIT",
       "sectionCode": "80TTB",
       "ruleType": "LIMIT",
       "maxAmount": 50000,
-      "notes": "Senior citizen interest"
+      "notes": "Senior citizen interest",
+      "label": "Interest income for senior citizens – Up to ₹50,000"
     },
     {
       "uniqueKey": "80U_40P",
@@ -389,7 +416,8 @@
       "ruleType": "DISABILITY",
       "minValue": 40,
       "fixedDeduction": 75000,
-      "notes": ">=40% disability"
+      "notes": ">=40% disability",
+      "label": "Self disability ≥40% – ₹75,000 deduction"
     },
     {
       "uniqueKey": "80U_80P",
@@ -397,10 +425,12 @@
       "ruleType": "DISABILITY",
       "minValue": 80,
       "fixedDeduction": 125000,
-      "notes": ">=80% disability"
+      "notes": ">=80% disability",
+      "label": "Self disability ≥80% – ₹1,25,000 deduction"
     }
   ]
 }
+
 
 
 
