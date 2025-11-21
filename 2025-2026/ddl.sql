@@ -69,13 +69,13 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 );
 
 ALTER TABLE tax_section
-ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
+DROP COLUMN IF EXISTS remarks;
 
 ALTER TABLE tax_section_rule
-ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
+DROP COLUMN IF EXISTS remarks;
 
 ALTER TABLE tax_section_group
-ADD COLUMN IF NOT EXISTS remarks VARCHAR(100);
+DROP COLUMN IF EXISTS remarks;
 
 
 
