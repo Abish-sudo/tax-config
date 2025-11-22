@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS tax_section_rule (
     donation_category VARCHAR(75),
     sub_category VARCHAR(100),
     unique_key VARCHAR(100) NOT NULL,
-    CONSTRAINT uq_section_unique_key UNIQUE (section_id, unique_key)
+    CONSTRAINT uq_section_unique_key UNIQUE (section_id, unique_key, financial_year)
 );
 
 ------------------------------------------------------------
@@ -70,6 +70,7 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 
 ALTER TABLE tax_section_rule
 ADD COLUMN IF NOT EXISTS label VARCHAR(250);
+
 
 
 
