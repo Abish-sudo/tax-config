@@ -180,8 +180,7 @@
       "ruleType": "LIMIT",
       "maxAmount": 150000,
       "notes": "Max allowed under 80C",
-      "label": "Maximum deduction allowed under Section 80C",
-      "financial_year": "2026-2027"
+      "label": "Maximum deduction allowed under Section 80C"
     },
     {
       "uniqueKey": "80CCC_GROUP_LIMIT",
@@ -431,6 +430,7 @@
     }
   ]
 }
+
 
 
 
