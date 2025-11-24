@@ -31,7 +31,9 @@ CREATE TABLE IF NOT EXISTS tax_section_rule (
     percent_limit DECIMAL(6,2),
     percent_limit_of VARCHAR(50),
     notes TEXT,
-    window_condition VARCHAR(20),
+    windowStart BIGINT,
+    windowEnd BIGINT,
+    sanctionYear BIGINT,
     age_limit VARCHAR(20),
     employee_type VARCHAR(50),
     tenure VARCHAR(50),
@@ -70,6 +72,7 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 
 ALTER TABLE tax_section_rule
 ADD COLUMN IF NOT EXISTS label VARCHAR(250);
+
 
 
 
