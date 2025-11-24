@@ -321,6 +321,7 @@
       "notes": "First-time home buyer (FY 2016-17)",
       "windowStart": 2016,
       "windowEnd": 2017,
+      "loanAmountLimit": 3500000,
       "tenure": "15 YEARS",
       "label": "Home loan interest (FY 2016–17) – Deduction up to ₹50,000"
     },
@@ -332,6 +333,7 @@
       "notes": "Affordable Housing",
       "windowStart": 2019,
       "windowEnd": 2022,
+      "loanAmountLimit": 4500000,
       "label": "Affordable housing loan interest – Deduction up to ₹1,50,000"
     },
     {
@@ -433,6 +435,7 @@
     }
   ]
 }
+
 
 
 
