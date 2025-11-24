@@ -314,31 +314,34 @@
       "label": "Education loan interest – Up to 8 years"
     },
     {
-      "uniqueKey": "80EE_LIMIT",
+      "uniqueKey": "80EE_WINDOW_LIMIT",
       "sectionCode": "80EE",
-      "ruleType": "LIMIT",
+      "ruleType": "WINDOW_LIMIT",
       "maxAmount": 50000,
       "notes": "First-time home buyer (FY 2016-17)",
-      "windowCondition": "2016-2017",
+      "windowStart": 2016,
+      "windowEnd": 2017,
       "tenure": "15 YEARS",
       "label": "Home loan interest (FY 2016–17) – Deduction up to ₹50,000"
     },
     {
-      "uniqueKey": "80EEA_LIMIT",
+      "uniqueKey": "80EEA_WINDOW_LIMIT",
       "sectionCode": "80EEA",
-      "ruleType": "LIMIT",
+      "ruleType": "WINDOW_LIMIT",
       "maxAmount": 150000,
       "notes": "Affordable Housing",
-      "windowCondition": "2019-2022",
+      "windowStart": 2019,
+      "windowEnd": 2022,
       "label": "Affordable housing loan interest – Deduction up to ₹1,50,000"
     },
     {
-      "uniqueKey": "80EEB_LIMIT",
+      "uniqueKey": "80EEB_WINDOW_LIMIT",
       "sectionCode": "80EEB",
-      "ruleType": "LIMIT",
+      "ruleType": "WINDOW_LIMIT",
       "maxAmount": 150000,
       "notes": "EV loan interest",
-      "windowCondition": "2019-2023",
+      "windowStart": 2019,
+      "windowEnd": 2023,
       "label": "EV loan interest – Deduction up to ₹1,50,000"
     },
     {
@@ -430,6 +433,7 @@
     }
   ]
 }
+
 
 
 
