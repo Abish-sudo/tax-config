@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS tax_section_rule (
     max_amount DECIMAL(12,2),
     percent_limit DECIMAL(6,2),
     percent_limit_of VARCHAR(50),
+    loanAmountLimit DECIMAL(12,2),
     notes TEXT,
     windowStart BIGINT,
     windowEnd BIGINT,
@@ -71,6 +72,7 @@ CREATE TABLE IF NOT EXISTS tax_section_group_map (
 
 ALTER TABLE tax_section_rule
 ADD COLUMN IF NOT EXISTS label VARCHAR(250);
+
 
 
 
